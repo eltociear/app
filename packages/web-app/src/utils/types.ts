@@ -315,8 +315,12 @@ export type EtherscanContractResponse = {
   SourceCode: string;
 };
 
-// TODO: Fill out as we go
-export type SmartContractAction = {};
+export type SmartContractAction = {
+  name: string;
+  type: string;
+  stateMutability: string;
+  // inputs:
+};
 
 export type SmartContract = {
   actions: Array<SmartContractAction>;
